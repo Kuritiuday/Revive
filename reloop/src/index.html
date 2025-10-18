@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloop 🌱 - Sustainable Products Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="screen active">
+        <div class="screen-wrapper">
+            <div class="login-container">
+                <div class="login-card">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i data-lucide="leaf"></i>
+                            <i data-lucide="leaf" class="logo-icon-overlay"></i>
+                        </div>
+                        <h1 class="logo-text">Reloop 🌱</h1>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="••••••••" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Log In</button>
+                    </form>
+
+                    <p class="signup-text">
+                        Don't have an account? <span class="link">Sign up</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen">
+        <div class="welcome-wrapper">
+            <div class="welcome-content">
+                <!-- Logo -->
+                <div class="welcome-logo">
+                    <div class="welcome-icon">
+                        <i data-lucide="leaf" class="pulse-icon"></i>
+                    </div>
+                    <h1 class="welcome-title">Reloop 🌱</h1>
+                </div>
+
+                <div class="welcome-message">
+                    <h2>Welcome to Reloop</h2>
+                    
+                    <div class="welcome-quote">
+                        <i data-lucide="sparkles"></i>
+                        <p>"Small choices make big changes."</p>
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                </div>
+
+                <div class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Screen -->
+    <div id="categoryScreen" class="screen">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <i data-lucide="leaf" class="header-icon"></i>
+                    <h1 class="header-title">Reloop 🌱</h1>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile" id="userProfile">
+                        <div class="avatar">SC</div>
+                        <div class="user-info">
+                            <p class="user-name">Sarah Chen</p>
+                            <p class="user-role">Eco Warrior</p>
+                        </div>
+                    </div>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" id="profileDropdown">
+                        <div class="dropdown-header">My Account</div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="user"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="shopping-bag"></i>
+                            <span>My Orders</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="settings"></i>
+                            <span>Settings</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-item-danger">
+                            <i data-lucide="log-out"></i>
+                            <span>Log out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content-wrapper">
+            <div class="text-center mb-large">
+                <h2>Shop by Category</h2>
+                <p class="subtitle">Choose sustainable products for every part of your life</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card" data-category="kitchen">
+                    <div class="category-content gradient-orange">
+                        <div class="category-header">
+                            <h3>Kitchen</h3>
+                            <i data-lucide="utensils-crossed"></i>
+                        </div>
+                        <p>Sustainable kitchen essentials</p>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="personal-care">
+                    <div class="category-content gradient-pink">
+                        <div class="category-header">
+                            <h3>Personal Care</h3>
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <p>Natural beauty & care</p>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="cleaning">
+                    <div class="category-content gradient-blue">
+                        <div class="category-header">
+                            <h3>Cleaning</h3>
+                            <i data-lucide="spray-can"></i>
+                        </div>
+                        <p>Eco-friendly cleaning</p>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="fashion">
+                    <div class="category-content gradient-purple">
+                        <div class="category-header">
+                            <h3>Fashion</h3>
+                            <i data-lucide="shirt"></i>
+                        </div>
+                        <p>Sustainable fashion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Contact Button -->
+        <button class="fab" id="contactFab">
+            <i data-lucide="users"></i>
+            <span>Meet the Team</span>
+        </button>
+    </div>
+
+    <!-- Product List Screen -->
+    <div id="productListScreen" class="screen">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button class="btn-icon" id="backBtn">
+                        <i data-lucide="arrow-left"></i>
+                    </button>
+                    <i data-lucide="leaf" class="header-icon"></i>
+                    <h1 class="header-title" id="categoryTitle">Products</h1>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile" id="userProfile2">
+                        <div class="avatar">SC</div>
+                        <div class="user-info">
+                            <p class="user-name">Sarah Chen</p>
+                            <p class="user-role">Eco Warrior</p>
+                        </div>
+                    </div>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" id="profileDropdown2">
+                        <div class="dropdown-header">My Account</div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="user"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="shopping-bag"></i>
+                            <span>My Orders</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i data-lucide="settings"></i>
+                            <span>Settings</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-item-danger">
+                            <i data-lucide="log-out"></i>
+                            <span>Log out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search products..." class="search-input">
+            </div>
+        </header>
+
+        <!-- Products Grid -->
+        <div class="content-wrapper">
+            <div id="productsGrid" class="products-grid"></div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No products found</p>
+            </div>
+        </div>
+
+        <!-- Floating Contact Button -->
+        <button class="fab" id="contactFab2">
+            <i data-lucide="users"></i>
+            <span>Meet the Team</span>
+        </button>
+    </div>
+
+    <!-- Contact Screen -->
+    <div id="contactScreen" class="screen">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button class="btn-icon" id="backToCategories">
+                        <i data-lucide="arrow-left"></i>
+                    </button>
+                    <i data-lucide="leaf" class="header-icon"></i>
+                    <h1 class="header-title">Meet the Makers</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content-wrapper">
+            <div class="text-center mb-large">
+                <h2>Our Team</h2>
+                <p class="subtitle">We're a passionate group of individuals committed to making sustainable living accessible and affordable for everyone.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team members will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="contact-cta">
+                <div class="cta-content">
+                    <h3>Have Questions?</h3>
+                    <p>We'd love to hear from you! Reach out to learn more about our products or sustainability practices.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-white" onclick="window.location.href='mailto:hello@reloop.eco'">
+                            <i data-lucide="mail"></i>
+                            Email Us
+                        </button>
+                        <button class="btn btn-white" onclick="window.open('https://wa.me/', '_blank')">
+                            <i data-lucide="phone"></i>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal-body">
+                <h2 id="modalProductName"></h2>
+
+                <div class="modal-image-container">
+                    <img id="modalProductImage" src="" alt="">
+                    <span class="badge" id="modalProductBadge"></span>
+                </div>
+
+                <div class="modal-price-container">
+                    <p class="modal-price" id="modalProductPrice"></p>
+                    <button class="btn btn-primary" id="modalBuyBtn">
+                        <i data-lucide="shopping-cart"></i>
+                        Buy Now
+                    </button>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-list">
+                        <button class="tab-btn active" data-tab="details">Details</button>
+                        <button class="tab-btn" data-tab="eco">Eco Info</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    </div>
+
+                    <div class="tab-content active" id="detailsTab">
+                        <div class="tab-section">
+                            <h4>
+                                <i data-lucide="leaf"></i>
+                                Description
+                            </h4>
+                            <p id="modalDescription"></p>
+                        </div>
+                        <div class="tab-section">
+                            <h4>Materials</h4>
+                            <p id="modalMaterials"></p>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="ecoTab">
+                        <div class="tab-section">
+                            <h4>
+                                <i data-lucide="recycle"></i>
+                                Sustainability Features
+                            </h4>
+                            <ul id="modalSustainability"></ul>
+                        </div>
+                        <div class="tab-section">
+                            <h4>
+                                <i data-lucide="award"></i>
+                                Certifications
+                            </h4>
+                            <div id="modalCertifications" class="certifications"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="reviewsTab">
+                        <div id="modalReviews" class="reviews-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
