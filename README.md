@@ -2,7 +2,7 @@ Team : Compiling Chaos
 
 
 Abstract: 
-ReVive is a curated e-commerce platform designed to promote sustainable living by offering reusable and eco-friendly products. It empowers consumers to make conscious choices through verified product listings, educational content, and a seamless shopping experience. The platform aims to reduce environmental impact while making sustainability accessible and engaging.
+ReVyana is a curated e-commerce platform designed to promote sustainable living by offering reusable and eco-friendly products. It empowers consumers to make conscious choices through verified product listings, educational content, and a seamless shopping experience. The platform aims to reduce environmental impact while making sustainability accessible and engaging.
 
 
 Vision: 
@@ -11,7 +11,7 @@ Vision:
 
 Mission:
 “Our mission is to build a trusted platform that curates Reusable and Eco-friendly products, educates consumers on sustainable living, and fosters a community committed to protecting the planet—one conscious choice at a time.”
-Objective
+Objective:
 •	To simplify eco-conscious shopping by curating verified bio-degradable products
 •	To educate users on sustainability and responsible consumption
 •	To build a community-driven platform that encourages long-term environmental impact
